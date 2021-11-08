@@ -1,0 +1,134 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');*/
+
+ * {
+ 	font-family: 'Raleway', sans-serif;
+ 	box-sizing: border-box;
+ 	text-decoration: none;
+ 	list-style-type: none;
+ 	padding: 0;
+ 	margin: 0;
+ }
+
+ body {
+ 	background: #212121;
+ }
+
+ header {
+ 	display: flex;
+ 	justify-content: space-between;
+ 	height: 80px;
+ 	align-items: center;
+ 	padding: 0rem 3.5rem;
+ 	color: #e2c26d;
+ 	width: 100%;
+ 	background: #323232;
+ }
+
+ header h1 {
+ 	font-size: 3rem;
+ 	float: left;
+ 	display: inline-block;
+ 	font-family: arial nova;
+ } 
+
+header a {
+	color: #e2c26d;
+	font-size: 1.8rem;
+	display: inline-block;
+	float: right;
+	font-family: arial nova;
+}
+
+header a:hover {
+	color: #f9ead0;
+	cursor: pointer;
+}
+
+.centro {
+	width: 100%;
+	min-height: 70px;
+	margin-top: 2em;
+	margin-bottom: 3em;
+}
+
+form.Buscar {
+	width: 50%;
+	background: #f4f5f9;
+	border-radius: 10px;
+}
+
+form.Buscar input {
+	height: 70px;
+	outline: none;
+	background: #f4f5f9;
+	border: none;
+	border-left: #5aab89 15px solid;
+	font-size: 1.25rem;
+	border-radius: 10px;
+	color: #282828;
+}
+
+form.Buscar input {
+	width: 100%;
+	padding: 0rem 1rem;
+}
+
+::placeholder {
+	color: grey;
+	font-size: 1.25rem;
+}
+
+.boton_buscar {
+	width: 240px;
+	height: 60px;
+	font-size: 1.25rem;
+	background-color: #5aab89; 
+	color: white;
+	-webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    border: 2px solid #6d9886;
+    border-radius: 8px;
+}
+
+.boton_buscar:hover {
+    background-color: #555555;
+    color: white;
+    border: 2px solid #555555;
+    cursor: pointer;
+}
+
+.boton_agregar {
+	width: 240px;
+	height: 60px;
+	font-size: 1.25rem;
+	background-color: #5aab89; 
+	color: white;
+	-webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    border: 2px solid #6d9886;
+    border-radius: 8px;
+    margin-right: 3rem;
+}
+
+.boton_agregar:hover {
+    background-color: #555555;
+    color: white;
+    border: 2px solid #555555;
+    cursor: pointer;
+}
+
+.men {
+	width: 100%;
+}
+
+.flash {
+	font-size: 17px;
+	color: #5aab89;
+	margin: 2em;
+}
+
+footer {
+	bottom: 0;
+	position: absolute;
+	width: 100%;
+}
