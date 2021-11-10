@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title> Resultado de Búsqueda </title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='maestros.css')}}">
+    <link rel="icon" href="{{ url_for('static', filename='imagenes/maestro.png')}}"/>
+</head>
+
+<body>
+	<header>
+		<center><h1> El recomendador </h1></center>
+	</header>
+
+    <center><div class="centro">
+        <h1>Resultado de Búsqueda: {{resultado}}</h1>
+        <hr>
+        {% for maestro in lista %}
+            <a href="">
+            {% for elemento in maestro %}
+            <div class="separador"><h2>{{elemento}}</h2></div>
+            {% endfor %}
+            </a><hr>
+        {% endfor %}
+    </center>
+
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    {% for msg in messages %}
+        <center><p class="flash">{{msg}}</p></center>
+    {% endfor %}
+    {% endif %}
+    {% endwith %}
+
+</body>
+</html>

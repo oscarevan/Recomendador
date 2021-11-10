@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> Iniciar Sesión </title>
+	<link rel="stylesheet" href="{{url_for('static',filename='inicio_sesion.css')}}">
+	<link rel="icon" href="{{url_for('static', filename='imagenes/maestro.png')}}"/>
+</head>
+<body>
+	<header>
+		<h1> El Recomendador </h1>
+	</header>
+
+	<form class="formulario" method="post">
+		<center><h2>Inicio de Sesión</h2>
+		<input name="usuario" placeholder="Correo Electrónico">
+		<input type="password" name="contraseña" placeholder="Contraseña">
+		<input type="submit" name="boton_continuar" value="Continuar">
+		{% with messages = get_flashed_messages() %}
+		{% if messages %}
+		{% for msg in messages %}
+		<p class="flash">{{msg}}</p>
+		{% endfor %}
+		{% endif %}
+		{% endwith %}
+		<p><strong>Al continuar, aceptas nuestros términos y condiciones de uso en nuestra página.</strong></p></center>
+	</form>
+	<div class="crear_cuenta">
+		<p>
+			¿No tienes cuenta?
+		</p>
+		<a href="/crear_cuenta"><button>Crea tu Cuenta</button></a>
+	</div>
+</body>
+</html>
