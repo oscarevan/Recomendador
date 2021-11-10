@@ -42,28 +42,36 @@ header a:hover {
 	cursor: pointer;
 }
 
-.centro {
-	width: 100%;
-	min-height: 70px;
-	margin-top: 2em;
-	margin-bottom: 3em;
+.formulario h2 {
+  font-size: 2.5rem;
+  color: #5aab89;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  font-family: arial nova;
+ }
+
+.formulario {
+	width: 600px;
+	height: 400px;
+	padding: 1em;
+	margin: 0 auto;
+	border-radius: 20px;
+	border: solid;
+    border-color: #5aab89;
+    border-width: 2px;
+    margin-top: 3rem;
 }
 
-form.Buscar {
-	width: 50%;
+.formulario input {
+	height: 50px;
 	background: #f4f5f9;
-	border-radius: 10px;
-}
-
-form.Buscar input {
-	height: 70px;
-	background: #f4f5f9;
-	border-left: #5aab89 15px solid;
+	border-left: #5aab89 10px solid;
 	font-size: 1.25rem;
 	border-radius: 10px;
 	color: #282828;
-	width: 100%;
-	padding: 0rem 1rem;
+	width: 80%;
+	margin-bottom: 2rem;
+	text-indent: 7px;
 }
 
 ::placeholder {
@@ -71,9 +79,9 @@ form.Buscar input {
 	font-size: 1.25rem;
 }
 
-input[type=submit]{
-	width: 240px;
-	height: 60px;
+.formulario input[type=submit] {
+	width: 200px;
+	height: 50px;
 	font-size: 1.25rem;
 	background-color: #5aab89; 
 	color: white;
@@ -81,43 +89,52 @@ input[type=submit]{
     transition-duration: 0.4s;
     border: 2px solid #6d9886;
     border-radius: 8px;
+    margin-bottom: 2rem;
 }
 
-input[type=submit]:hover {
-    background-color: #555555;
+.formulario input[type=submit]:hover {
+	background-color: #555555;
     color: white;
     border: 2px solid #555555;
     cursor: pointer;
-}
+} 
 
-.boton_agregar {
-	width: 240px;
-	height: 60px;
-	font-size: 1.25rem;
-	background-color: #5aab89; 
-	color: white;
-	-webkit-transition-duration: 0.4s;
-    transition-duration: 0.4s;
-    border: 2px solid #6d9886;
-    border-radius: 8px;
-    margin-left: 3rem;
-}
-
-.boton_agregar:hover {
-    background-color: #555555;
-    color: white;
-    border: 2px solid #555555;
-    cursor: pointer;
-}
-
-.men {
-	width: 100%;
+.formulario p {
+	color: #f4f5f9;
+	font-size: 13px
 }
 
 .flash {
-	font-size: 17px;
-	color: #5aab89;
-	margin: 2em;
+	color: red;
+	margin: 1 auto;
+}
+
+div.crear_cuenta {
+	text-align: center;
+	width: 400px;
+	padding: 1em;
+	margin: 0 auto;
+	color: #f4f5f9;
+}
+
+div.crear_cuenta button {
+	width: 160px;
+	height: 30px;
+	font-size: 1rem;
+	background-color: #5aab89; 
+	color: white;
+	-webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    border: 2px solid #6d9886;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+div.crear_cuenta button:hover {
+	background-color: #555555;
+    color: white;
+    border: 2px solid #555555;
+    cursor: pointer;
 }
 
 footer {
