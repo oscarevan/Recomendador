@@ -15,7 +15,18 @@ def principal():
 			flash("No te quiere")
 		elif busqueda_maestro=="Thelmagod":
 			flash("Es mi pastora, nada me faltará")
+		elif busqueda_maestro!="":
+			return redirect(url_for("maestros", resultado=busqueda_maestro))
 	return render_template("main.html")
+
+@app.route('/iniciar_sesion', methods=["GET", "POST"])
+def iniciar_sesion():
+	return render_template("inicio_sesion.html")
+
+@app.route('/maestros/<resultado>', methods=["GET", "POST"])
+def maestros(resultado):
+	lista = [('Boites', 100),('Boites', 100),('Boites', 100),('Boites', 100)]
+	return render_template("maestros.html", resultado=resultado, lista=lista)
 
 if __name__ == '__main__':
 	app.run(port = 2000, debug = True)
