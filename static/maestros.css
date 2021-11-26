@@ -1,0 +1,119 @@
+* {
+ 	font-family: 'Raleway', sans-serif;
+ 	box-sizing: border-box;
+ 	text-decoration: none;
+ 	list-style-type: none;
+ 	padding: 0;
+ 	margin: 0;
+ }
+
+ body {
+ 	background: #212121;
+ }
+
+ header {
+ 	display: flex;
+ 	justify-content: space-between;
+ 	height: 80px;
+ 	align-items: center;
+ 	padding: 0rem 3.5rem;
+ 	color: #e2c26d;
+ 	width: 100%;
+ 	background: #323232;
+ }
+
+ header h1 {
+ 	font-size: 3rem;
+ 	float: left;
+ 	display: inline-block;
+ 	font-family: arial nova;
+ }
+
+ header a {
+	color: #e2c26d;
+	font-size: 1.8rem;
+	display: inline-block;
+	float: right;
+	font-family: arial nova;
+}
+
+div.tabla h1 {
+	color: #e2c26d;
+	margin-top: 2rem;
+	font-size: 2rem;
+	margin-bottom: 2rem;
+}
+
+div.titulo_tabla {
+	background: #323232;
+	height: 85px;
+	width: 60%;
+}
+
+div.titulo_tabla h1 {
+	display: inline-block;
+	font-size: 1.5rem;
+	color: #5aab89;
+}
+
+h1.profesor {
+	margin-right: 18rem;
+	margin-left: 1rem;
+}
+
+h1.inicio_tabla {
+	margin-top: 2rem;
+}
+
+div.separador {
+	height: 40px; 
+	width: 60%;
+	color: black;
+	background-color: #898989;
+	padding-top: 5px;
+}
+
+div.separador form {
+	height: 100%; 
+	width: 100%;
+	color: black;
+	background-color: transparent;
+	padding-top: 5px;
+	display: inline-block;
+}
+
+input[type=submit] {
+	background-color: transparent;
+	text-align: center;
+	border: none;
+	display: inline-block;	
+	cursor: pointer;	
+	width: 400px;
+	height: 30px;
+	color: white;
+	font-size: 1.1rem;
+}
+
+input[type=text] {
+	width: 0px;
+	height: 0px;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+div.separador:hover {
+	background-color: #5aab89;
+	cursor: pointer;
+}
+	
+.flash {
+	font-size: 1.5rem;
+	color: #5aab89;
+	margin: 2em;
+}
+
+footer {
+	margin-top: 5rem;
+	width: 100%;
+}

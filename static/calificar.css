@@ -1,0 +1,161 @@
+* {
+ 	font-family: 'Raleway', sans-serif;
+ 	box-sizing: border-box;
+ 	text-decoration: none;
+ 	list-style-type: none;
+ 	padding: 0;
+ 	margin: 0;
+ }
+
+ body {
+ 	background: #212121;
+ }
+
+ header {
+ 	display: flex;
+ 	justify-content: space-between;
+ 	height: 80px;
+ 	align-items: center;
+ 	padding: 0rem 3.5rem;
+ 	color: #e2c26d;
+ 	width: 100%;
+ 	background: #323232;
+ }
+
+ header h1 {
+ 	font-size: 3rem;
+ 	float: left;
+ 	display: inline-block;
+ 	font-family: arial nova;
+ } 
+
+ header a {
+	color: #e2c26d;
+	font-size: 1.8rem;
+	display: inline-block;
+	float: right;
+	font-family: arial nova;
+}
+
+h1.profesor {
+	color: #e2c26d;
+	margin-bottom: 0rem;
+	margin-top: 2rem;
+}
+
+.formulario h2 {
+  font-size: 2.5rem;
+  color: #5aab89;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  font-family: arial nova;
+ }
+
+.formulario {
+	width: 800px;
+	height: 650px;
+	padding: 1em;
+	margin: 0 auto;
+	border-radius: 20px;
+	border: solid;
+    border-color: #e2c26d;
+  	border-width: 2px;
+  	margin-top: 3rem;
+}
+
+div {
+	width: 80%;
+	margin-bottom: 2rem;
+}
+
+div.materia input {
+	margin-left: 15rem;
+}
+
+div.puntualidad input {
+	margin-left: 19rem;
+}
+
+div.dificultad input {
+	margin-left: 21rem;
+}
+
+div.dominio input {
+	margin-left: 22rem;
+}
+
+h3 {
+	display: inline-block;
+	color: #5aab89;
+	float: left;
+	font-size: 1.8rem;
+	padding: 8px;
+}
+
+.formulario input {
+	display: inline-block;
+	height: 50px;
+	background: #f4f5f9;
+	border-left: #5aab89 10px solid;
+	font-size: 1.25rem;
+	border-radius: 10px;
+	color: #282828;
+	width: 20%;
+	text-indent: 7px;
+}
+
+::placeholder {
+	color: grey;
+	font-size: 1.25rem;
+}
+
+.formulario input[type=submit] {
+	width: 200px;
+	height: 50px;
+	font-size: 1.25rem;
+	background-color: #5aab89; 
+	color: white;
+	-webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    border: 2px solid #6d9886;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.formulario input[type=submit]:hover {
+	background-color: #555555;
+    color: white;
+    border: 2px solid #555555;
+    cursor: pointer;
+} 
+
+textarea {
+	resize: none;
+	height: 100px;
+	width: 80%;
+	margin-bottom: 2rem;
+	border-radius: 8px;
+	font-size: 1.25rem;
+	text-indent: 7px 7px;
+	text-align: justify-all;
+	padding: 10px;
+	background-color: #f4f5f9;
+	color: #282828;
+}
+
+::placeholder {
+	color: #282828;
+	font-size: 1.25rem;
+	text-align: center;
+}
+	
+.flash {
+	font-size: 17px;
+	color: #5aab89;
+	margin: 2em;
+}
+
+footer {
+	margin-top: 3rem;
+	width: 100%;
+}

@@ -1,0 +1,162 @@
+* {
+ 	font-family: 'Raleway', sans-serif;
+ 	box-sizing: border-box;
+ 	text-decoration: none;
+ 	list-style-type: none;
+ 	padding: 0;
+ 	margin: 0;
+ }
+
+ body {
+ 	background: #212121;
+ }
+
+ header {
+ 	display: flex;
+ 	justify-content: space-between;
+ 	height: 80px;
+ 	align-items: center;
+ 	padding: 0rem 3.5rem;
+ 	color: #e2c26d;
+ 	width: 100%;
+ 	background: #323232;
+ }
+
+ header h1 {
+ 	font-size: 3rem;
+ 	float: left;
+ 	display: inline-block;
+ 	font-family: arial nova;
+ }
+
+ header a {
+	color: #e2c26d;
+	font-size: 1.8rem;
+	display: inline-block;
+	float: right;
+	font-family: arial nova;
+} 
+
+h1.profesor {
+	color: #e2c26d;
+	margin-bottom: 2rem;
+	margin-top: 2rem;
+}
+
+div.contenedor {
+	display: inline-block;
+	width: 40%;
+	margin-bottom: 0rem;
+	margin-top: 1rem;
+}
+
+div.izquierda {
+	float: left;
+}
+
+div.derecha {
+	float: right;
+}
+
+h2 {
+	color: white;
+	margin-bottom: 1rem;
+}
+
+.derecha h2 {
+	color:  white;
+	margin-top: 2.7rem;
+}
+
+h3 {
+	color: #e2c26d;
+	font size: 1rem;
+	display: inline-block;
+	margin-left: 2.5rem;
+	margin-right: 2.5rem;
+	margin-bottom: 1rem;
+	margin-top: 1rem;
+}
+
+h4 {
+	color: grey;
+	font-size: 1rem;
+	display: inline-block;
+	margin-bottom: 1rem;
+}
+
+h5 {
+	color: #bebebe;
+	font-size: 0.8rem;
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+}
+
+input[type=submit] {
+	width: 240px;
+	height: 60px;
+	font-size: 1.25rem;
+	background-color: #5aab89; 
+	color: white;
+	-webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    border: 2px solid #6d9886;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+input[type=submit]:hover {
+    background-color: #555555;
+    color: white;
+    border: 2px solid #555555;
+    cursor: pointer;
+}
+
+input[type=text] {
+	width: 0px;
+	height: 0px;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+
+div.comentarios {
+	width: 70%;
+	margin-bottom: 2rem;
+	margin-top: 1rem;
+}
+
+div.comentarios h2 {
+	color: #5aab89;
+	font-size: 2rem;
+}
+
+p {
+	width: 95%;
+	color: white;
+	font-size: 1.2rem;
+	margin-bottom: 1rem;
+	align-self: left;
+}
+
+div.separador {
+	width: 70%;
+	border: ridge;
+	margin-bottom: 1rem;
+	border-color: #e2c26d;
+	background-color: #323232;
+	border-radius: 20px;
+	border-width: 2px;
+}
+	
+.flash {
+	font-size: 17px;
+	color: #5aab89;
+	margin: 2em;
+}
+
+footer {
+	margin-top: 3rem;
+	width: 100%;
+}

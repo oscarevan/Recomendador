@@ -45,7 +45,7 @@ header a:hover {
 .centro {
 	width: 100%;
 	min-height: 70px;
-	margin-top: 2em;
+	margin-top: 3em;
 	margin-bottom: 3em;
 }
 
@@ -53,6 +53,7 @@ form.Buscar {
 	width: 50%;
 	background: #f4f5f9;
 	border-radius: 10px;
+	margin-top: 2rem;
 }
 
 form.Buscar input {
