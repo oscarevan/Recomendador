@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title> Resultado de Búsqueda </title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='maestros.css')}}">
+    <link rel="icon" href="{{ url_for('static', filename='imagenes/maestro.png')}}"/>
+</head>
+
+<body>
+	<header>
+		<a href="/"><h1> El Recomendador </h1></a>
+        <a href="/iniciar_sesion" class=""> {{usuario}} </a>
+	</header>
+
+    <center>
+        <div class="tabla">
+            <h1>Resultado de Búsqueda: {{resultado}} {{busqueda}}</h1>
+            <div class="titulo_tabla">
+                <h1 class="profesor">Profesor</h1>
+                <h1 class="calificacion">Calificación</h1>
+            </div>        
+        </div>
+    </center>
+
+        <center>
+        {% for maestro in lista %}
+            <div class="separador" name={{maestro[0]}}>
+            <form method="post">
+            <input type="text" name="id" value={{maestro[0]}}>
+            <input type="submit" class="nombre" name='nombre' value="{{maestro[1]}}">
+            <input type="submit" class="calificacion" name='calificacion' value="{{maestro[2]}}">
+            </form>
+            </div>      
+        {% endfor %}
+        </center>
+        
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    {% for msg in messages %}
+        <center><p class="flash">{{msg}}</p></center>
+    {% endfor %}
+    {% endif %}
+    {% endwith %}
+
+<footer>
+</footer>
+
+</body>
+</html>

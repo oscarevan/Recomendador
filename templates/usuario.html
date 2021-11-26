@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title> {{usuario}} </title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='usuario.css')}}">
+    <link rel="icon" href="{{ url_for('static', filename='imagenes/maestro.png')}}"/>
+</head>
+
+<body>
+	<header>
+		<a href="/"><h1> El Recomendador </h1></a>
+	</header>
+
+    <center>
+    	<h1 class="info">Información de mi cuenta</h1>
+        <h2 class="correo">Correo Registrado: {{correo}}</h2>
+        <h2 class="usuario">Nombre de Usuario: {{usuario}}</h2>
+        <a href="/cerrar_sesion"><button>Cerrar Sesión</button></a>
+    </center>
+
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    {% for msg in messages %}
+        <center><p class="flash">{{msg}}</p></center>
+    {% endfor %}
+    {% endif %}
+    {% endwith %}
+
+</body>
+</html>

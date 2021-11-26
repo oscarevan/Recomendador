@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title> {{nombre[0]}} </title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='profesor.css')}}">
+    <link rel="icon" href="{{ url_for('static', filename='imagenes/maestro.png')}}"/>
+</head>
+
+<body>
+	<header>
+		<a href="/"><h1> El Recomendador </h1></a>
+        <a href="/iniciar_sesion" class=""> {{usuario}} </a>
+	</header>
+
+    <center>
+        <h1 class="profesor">{{nombre[0]}}</h1>
+        <div class="contenedor">
+            <div class="izquierda">
+            <h2 align="justify">Puntualidad: {{lista[0]}}</h2>
+            <h2 align="justify">Dificultad: {{lista[1]}}</h2>
+            <h2 align="justify">Dominio: {{lista[2]}}</h2>
+            </div>
+
+            <div class="derecha">
+            <h2 align="justify">Calificación: {{nombre[1]}}</h2>
+            </div>
+        </div>
+        <h5 align="center">Evaluaciones Recibidas: {{lista[3]}}</h5>
+        <form method="post">
+            <input type="text" name="id" value="{{id_profesor}}">
+            <input type="submit" name="calificar_profesor" value="Calificar Profesor">
+        </form>
+    </center>
+
+    <center><div class="comentarios">
+        <h2 align="justify"> Comentarios </h2>
+    </div></center>
+    
+    <center>       
+        {% for comentario in comentarios %}
+            <div class="separador">
+            <h3>Materia: {{comentario[0]}}</h3>
+            <h3>Usuario: {{comentario[2]}}</h3>
+            <p align="justify" class="comentario">{{comentario[1]}}</p> 
+            </div>     
+        {% endfor %}
+    </center>
+
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    {% for msg in messages %}
+        <center><p class="flash">{{msg}}</p></center>
+    {% endfor %}
+    {% endif %}
+    {% endwith %}
+
+<footer></footer>
+
+</body>
+</html>

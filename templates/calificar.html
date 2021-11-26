@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title> {{nombre[0]}} </title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='calificar.css')}}">
+    <link rel="icon" href="{{ url_for('static', filename='imagenes/maestro.png')}}"/>
+</head>
+
+<body>
+	<header>
+		<a href="/"><h1> El Recomendador </h1></a>
+        <a href="/iniciar_sesion" class=""> {{usuario}} </a>
+	</header>
+
+    <center>
+    <form class="formulario" method="post">
+        <h2>{{nombre[0]}}</h2>
+        <div class="materia">
+            <h3>Clave de Materia</h3>
+            <input name="materia" maxlength="5">
+        </div>
+        <div class="puntualidad">
+            <h3>Puntualidad</h3>
+            <input type="number" min="0" max="100" name="puntualidad" required>
+        </div>
+        <div class="dificultad">
+            <h3>Dificultad</h3>
+            <input type="number" min="0" max="100" name="dificultad" required>
+        </div>
+        <div class="dominio">
+            <h3>Dominio</h3>
+            <input type="number" min="0" max="100" name="dominio" required>
+        </div>
+        <textarea name="comentario" maxlength="1000" placeholder="Escribe un comentario acerca del profesor"></textarea>
+        <input type="submit" name="boton_continuar" value="Enviar">
+    </center>
+    </form>
+
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    {% for msg in messages %}
+        <center><p class="flash">{{msg}}</p></center>
+    {% endfor %}
+    {% endif %}
+    {% endwith %}
+
+<footer></footer>
+
+</body>
+</html>
