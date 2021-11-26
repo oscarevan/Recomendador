@@ -15,9 +15,6 @@ conexion = psycopg2.connect(
 
 cursor = conexion.cursor()
 
-#lista = [(1,'Michel Davalos Boites',100,100,100,100,20),(2,'Angel Hiram Shakur Garcia Corona',100,100,90,95,5),(3,'Thelma', 80),(4,'Octavio', 100),(5,'Meza', 95),(6,'Thelma', 80),(7,'Octavio', 100),(8,'Meza', 95),(9,'Thelma', 80),(10,'Oscar Evanilson Gutiérrez Pérez', 100),(2,'Angel Hiram Shakur Garcia Corona',95),(3,'Thelma', 80),(4,'Octavio', 100),(5,'Meza', 95),(6,'Thelma', 80),(7,'Octavio', 100),(8,'Meza', 95),(9,'Thelma', 80),(10,'Oscar Evanilson Gutiérrez Pérez', 100)]
-#comentarios = [(1,'I5898','Muy buen maestro, es god','juanhot',2),((2,'I5899','Este profe se carga la carrera, es un dios y lo recomiendo mucho, el mejor que he tenido en todos los semestres, GOOOOOOd','lupercito',1)),((3,'I7025','Muy buen maestro','oscar',2))]
-
 @app.route('/', methods=["GET","POST"])
 @app.route('/<usuario>', methods=["GET","POST"])
 def main(usuario="Registrarte / Iniciar Sesión"):
@@ -25,11 +22,7 @@ def main(usuario="Registrarte / Iniciar Sesión"):
 		usuario = session['user']
 	if request.method == 'POST':
 		busqueda_maestro=request.form['busqueda_input']
-		if busqueda_maestro=="Ella":
-			flash("No te quiere")
-		elif busqueda_maestro=="Thelmagod":
-			flash("Es mi pastora, nada me faltará")
-		elif busqueda_maestro!="":
+		if busqueda_maestro!="":
 			return redirect(url_for("maestros", resultado=busqueda_maestro))
 	return render_template("main.html", usuario=usuario)
 
